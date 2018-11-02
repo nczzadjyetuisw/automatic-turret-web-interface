@@ -39,6 +39,10 @@ def video_feed():
     return Response(gen(WebcamVideoStream().start()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
+@app.route('/help')
+def help():
+    return render_template('help.html')
+
 
 if __name__ == '__main__':
     print("Public host: http://" + socket.gethostbyname(socket.gethostname()) + ":5000")

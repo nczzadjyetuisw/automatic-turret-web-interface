@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Water Gun Turret</title>
+    {% block head %}
+      <header>
+        <center><h1>Automatic Water Gun Turret</h1>
+        <h2>Web Interface</h2></center>
+      </header>
+      <navigation>
+        <center>
+          <a href="/"><div class="link">Home</div></a>
+          <a href="/help"><div class="link">How To Use</div></a>
+          <a href="/contact"><div class="link">Contact Us</div></a>
+        </center>
+    </navigation>
+    {% endblock %}
+  </head>
+  {% block body %}
+  <body>
+  </body>
+  {% endblock %}
+</html>

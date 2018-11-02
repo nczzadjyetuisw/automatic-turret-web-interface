@@ -8,6 +8,9 @@ class WebcamVideoStream:
         # from the stream
         print("init")
         self.stream = cv2.VideoCapture(src)
+        self.stream.set(3, 400)
+        self.stream.set(4, 400)
+               
         (self.grabbed, self.frame) = self.stream.read()
 
         # initialize the variable used to indicate if the thread should

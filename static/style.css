@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+body {
+  background-color:#CDEDE7;
+  font-family:sans-serif;
+  color:#070A0E;
+}
+
+header {
+  width:100%;
+  text-align:center;
+  top:0;
+  left:0;
+}
+
+navigation {
+  margin-bottom:5%;
+}
+
+.link {
+  font-size:11px;
+  width:100px;
+  height:40px;
+  background-color:#DDF3EF;
+  color:#000;
+  display:inline-block;
+  transition:.5s;
+  text-transform:uppercase;
+}
+
+.link:hover {
+  background-color:#DDE3EA;
+  transition:.7s;
+}
+
+h1 {
+  font-family:sans-serif;
+  color:#EF767A;
+}
+
+h2 {
+  font-family:'Pattaya', serif;
+  color:#57C59F;
+}
+
+td {
+  border:none;
+  width:200px;
+  height:25px;
+  text-align:center;
+  color:#fff;
+  background-color:#F08A4B;
+  transition:2s;
+  cursor:pointer;
+}
+
+td:hover {
+  background-color:#55ff33;
+  transition:2s;
+}
+
+img {
+  border:5px solid #EEB868;
+}
