@@ -22,7 +22,10 @@ header {
   flex-direction: row;
   justify-content: center;
   margin: 0;
+  left:0;
   text-align: center;
+  background-color:antiquewhite;
+  padding:10px 0px 10px 0px;
 }
 
 .link {
