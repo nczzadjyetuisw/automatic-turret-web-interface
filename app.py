@@ -43,6 +43,10 @@ def video_feed():
 def help():
     return render_template('help.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 
 if __name__ == '__main__':
     print("Public host: http://" + socket.gethostbyname(socket.gethostname()) + ":5000")

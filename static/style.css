@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Pattaya');
+/*@import url('https://fonts.googleapis.com/css?family=Pattaya');
 
-body {
-  background-color:#CDEDE7;
-  font-family:sans-serif;
-  color:#070A0E;
+
+  background-color:#f4ebd6;
 }
 
-header {
-  width:100%;
-  text-align:center;
-  top:0;
-  left:0;
-}
-
-navigation {
+.navigation {
   margin-bottom:5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
 }
 
 .link {
+  margin-right: 15px;
   font-size:11px;
   width:100px;
   height:40px;
@@ -26,6 +24,10 @@ navigation {
   display:inline-block;
   transition:.5s;
   text-transform:uppercase;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 }
 
 .link:hover {
@@ -61,4 +63,241 @@ td:hover {
 
 img {
   border:5px solid #EEB868;
+  margin-top:150px;
+  left:0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
+
+}
+
+.link a {
+	text-decoration: none;
+	color: #57C59F;
+}
+
+#contact {
+	width: 100%;
+	height: 100%;
+	display: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#contact h1 {
+	margin: 40px 0;
+}
+
+.contact-table {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 30px;
+	height: 150px;
+}
+
+.contact-table img {
+	height: 150px !important;
+}
+
+.contact-info {
+	text-align: left;
+	margin-left: 20px;
+	height: 100% !important;
+	font-family:sans-serif;
+	color:#EF767A;
+}
+
+.contact-info a {
+	font-size: 20px;
+}
+
+.contact-info p {
+	color:#57C59F;
+	width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+	.contact-table {
+		flex-direction: column;
+		height: 250px;
+	}
+	.contact-info {
+		margin: 10px 10px;
+		width: 235px;
+	}
+	.contact-info p {
+		width: 100%;
+	}
+}
+
+.contact-form {
+	border-radius: 3px;
+	background-color: rgba(82, 82, 82, 0.459)
+}
+
+.link:hover {
+  background-color:#DDE3EA;
+  transition:.7s;
+}
+
+***/
+
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+body {
+  background-color:#CDEDE7;
+  font-family:sans-serif;
+  color:#070A0E;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width:100%;
+  text-align:center;
+  top:0;
+  left:0;
+}
+
+.navigation {
+  margin-bottom:5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+.link {
+  margin-right: 15px;
+  font-size:11px;
+  width:100px;
+  height:40px;
+  background-color:#DDF3EF;
+  color:#000;
+  display:inline-block;
+  transition:.5s;
+  text-transform:uppercase;
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
+}
+
+.link a {
+	text-decoration: none;
+	color: #57C59F;
+}
+
+#contact {
+	width: 100%;
+	height: 100%;
+	display: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#contact h1 {
+	margin: 40px 0;
+}
+
+.contact-table {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 30px;
+	height: 150px;
+}
+
+.contact-table img {
+	height: 150px !important;
+}
+
+.contact-info {
+	text-align: left;
+	margin-left: 20px;
+	height: 100% !important;
+	font-family:sans-serif;
+	color:#EF767A;
+}
+
+.contact-info a {
+	font-size: 20px;
+}
+
+.contact-info p {
+	color:#57C59F;
+	width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+	.contact-table {
+		flex-direction: column;
+		height: 250px;
+	}
+	.contact-info {
+		margin: 10px 10px;
+		width: 235px;
+	}
+	.contact-info p {
+		width: 100%;
+	}
+}
+
+.contact-form {
+	border-radius: 3px;
+	background-color: rgba(82, 82, 82, 0.459)
+}
+
+.link:hover {
+  background-color:#DDE3EA;
+  transition:.7s;
+}
+
+h1 {
+  font-family:sans-serif;
+  color:#EF767A;
+}
+
+h2 {
+  font-family:'Pattaya', serif;
+  color:#57C59F;
+}
+
+td {
+  border:none;
+  width:200px;
+  height:25px;
+  text-align:center;
+  color:#fff;
+  background-color:#F08A4B;
+  transition:2s;
+  cursor:pointer;
+}
+
+td:hover {
+  background-color:#55ff33;
+  transition:2s;
+}
+
+img {
+  border:5px solid #EEB868;
+  
+  /* flips the image horizontally */
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+
+
